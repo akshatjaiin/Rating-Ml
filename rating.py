@@ -7,12 +7,9 @@ dataset = pd.read_csv("Dataset.csv")
 dataset = dataset.dropna(axis=0)
 print(dataset.columns)
 y = dataset['Aggregate rating']
-features = ['Restaurant ID', 'Restaurant Name', 'Country Code', 'City', 'Address',
-       'Locality', 'Locality Verbose', 'Longitude', 'Latitude', 'Cuisines',  
-       'Average Cost for two', 'Currency', 'Has Table booking',
+features = ['Restaurant ID', 'Country Code', 'Longitude', 'Latitude', 'Average Cost for two', 'Currency', 'Has Table booking',
        'Has Online delivery', 'Is delivering now', 'Switch to order menu',   
-       'Price range', 'Rating color', 'Rating text',     
-       'Votes']
+       'Price range', 'Votes']
 X = dataset[features]
 
 
