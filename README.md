@@ -54,13 +54,10 @@ Run the script: The model will automatically preprocess the data, split it into 
 
 Hyperparameter Tuning: The model will test different values for max_leaf_nodes (40, 500, 1000, 3000, 5000) and report the Mean Absolute Error (MAE) for each configuration.
 
-bash
-Copy code
-python model_training.py
+python rating.py
 Sample output:
 
-plaintext
-Copy code
+
 MAE with max_leaf_nodes=40: 0.532
 MAE with max_leaf_nodes=500: 0.428
 MAE with max_leaf_nodes=1000: 0.422
@@ -83,3 +80,4 @@ Copy code
 1. You need to create a `requirements.txt` file with the dependencies listed under "Required Libraries."
 2. Ensure the dataset (`Dataset.csv`) is available in the same directory as the script. The dataset must be preprocessed to remove any missing values (`dropna` is used in the script).
 3. The script uses `train_test_split` to split the data into training and validation sets (80% training, 20% validation).
+![image](https://github.com/user-attachments/assets/c508bb1a-ca94-457c-a1d2-85c4f15b831b)
