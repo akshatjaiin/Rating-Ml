@@ -22,15 +22,7 @@ To set up this project, clone the repository and install the required Python pac
 pip install -r requirements.txt
 Required Libraries
 pandas: For data handling and manipulation.
-scikit-learn: For building the machine learning pipeline, including data preprocessing and regression model.
-numpy: Required by scikit-learn.
-The requirements.txt file should include:
-
-plaintext
-Copy code
-pandas
-scikit-learn
-numpy
+```
 Features
 Data Preprocessing: The script preprocesses both numerical and categorical features. Numerical features are standardized using StandardScaler, while categorical features are encoded using OneHotEncoder.
 Model Training: A decision tree regression model is trained to predict the aggregate rating of restaurants based on the provided features.
@@ -69,8 +61,6 @@ Model Evaluation
 After training, the model will be fitted on the entire dataset using the best max_leaf_nodes value, and it can be used for further prediction tasks.
 
 Project Structure
-plaintext
-Copy code
 ├── Dataset.csv                 # Input dataset
 ├── rating.py            # Main script for data preprocessing, model training, and evaluation
 ├── requirements.txt             # Python dependencies
